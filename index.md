@@ -1,37 +1,89 @@
-## Welcome to GitHub Pages
+## 안녕하세요. 주식회사 보안정보기술 입니다.
 
-You can use the [editor on GitHub](https://github.com/boanit/pen/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+여기에서는  [홈페이지](https://www.boanit.kr)에서 표현하기 용이하지 않은 글들을 블로그 타입으로 제공할 예정입니다.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### 보안정보기술?
 
-### Markdown
+보안정보기술은 보안 회사입니다. 그러나 개발도 합니다. 개발 없는 보안이란 있을 수 없습니다.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+개발을 배우지 않고 진단만 하고자 하는 분은 아래부터는 읽지 않으셔도 됩니다.
 
-```markdown
-Syntax highlighted code block
+### 웹(어플리케이션)보안
 
-# Header 1
-## Header 2
-### Header 3
+아파치, 톰캣, 인터넷정보서비스 등으로 서비스 되는 인터넷 http(s)기반 응용 프로그램을 진단합니다.
 
-- Bulleted
-- List
+아파치 기반의 php 언어로 짜여진 웹사이트가 구축되어 있습니다. 잘 알려진 DVWA, bWAPP 가 좋은 실습 환경이죠.
 
-1. Numbered
-2. List
+톰캣으로는 jsp로 작성된 코드를 실행할 수 있습니다. mysql을 jdbc로 연결하여 sql injection, xss를 테스트 할 수 있죠.
 
-**Bold** and _Italic_ and `Code` text
+IIS 에는 asp로 만든 웹사이트가 있습니다. MS-SQL 과 연동하여 쿠키, 인증 관련 취약점도 확인해 볼 수 있죠.
 
-[Link](url) and ![Image](src)
-```
+SSI, XPATH 취약점도 테스트할 수 있는데, 지금도 〈!--#echo var="DOCUMENT_ROOT" --〉 를 넣어 실행 가능하도록 mod_include.so가 적용된 환경을 구성했습니다.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### DBMS 보안
 
-### Jekyll Themes
+웹은 기본적으로 DBMS를 이용해 데이터를 출력합니다. TXT 파일을 DB 형태로 사용할 수도 있지만, DBMS가 더 효율적이니 이를 사용할 거라 생각됩니다.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/boanit/pen/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+mysql은 쉽게 설치하고 이용할 수 있는 db이고, ms access를 이용하는 것도 나쁘지는 않습니다.
 
-### Support or Contact
+그래도 MS-SQL 정도는 있어야 실습 가능하니, 2가지 정도의 DBMS 는 준비되어 있습니다.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Oracle이요? 당연히 활용 가능한 환경이 있습니다. 물론 제한적이지만요.
+
+DBMS의 DB를 다루기 위한 쿼리는 기본적으로 굉장히 중요합니다.
+
+쿼리도 모르면서 SQL injection을 확인하는 어리석은 짓은 하면 안됩니다.
+
+### 서버 보안
+
+linux 는 주로 centos(5.3, 6.3)와 ubuntu(12.x, 14.x)가 많이 사용되고, 많이 운영하고 있습니다.
+
+windows OS도 가상환경으로 2개 정도 운영하고 있는데, aws나 google cloud flatform에서 1년 무료 사용 가능한 방법이 있으니 확장에는 제한이 없습니다.
+
+VM ware 등으로 사용 가능한지만, 제가 선호하는 방법은 아닙니다.
+
+쉘 스크립트는 서버 진단을 효율적으로 할 수 있는 도구입니다.
+
+설정을 빠르게 수집하여 가이드에 부합하는지 여부를 확인 할 수 있습니다.
+
+쉘 스크립트는 간단한 코딩이지만, 개발에 속할 수 있습니다. 쉘 스크립트를 작성하고자 한다면, unix(linux), windows를 잘 알아야 합니다.
+
+윈도우 CMD 창도 못 열고, unix, windows를 설치해보지 않고 진단할 수는 없습니다.
+
+### 네트워크 보안
+
+네트워크 로그는 다년간 분석을 수행하며 보안 설정을 위한 방법을 확인해 왔습니다.
+
+### 보안장비 보안
+
+VPN 이나, DDoS 방어, 방화벽, 웹방화벽 등의 보안장비는 각각 특성에 맞게 진단합니다.
+
+### WEB/WAS 보안
+
+web.xml, 로그 파일, 설정파일, 실행 파일과 데몬 관리, 사용자, 계정 관리는 아파치, Jboss, 톰캣, IIS 에서 확인할 수 있는 항목들입니다.
+
+보안설정을 통해 웹(어플리케이션) 보안을 향상시킬 수 있습니다.
+
+### 모바일앱 보안
+
+안드로이드와 IOS 앱들은 루팅, 탈옥에 의한 기기내 취약점 진단과 서버, 클라이언트 통신에서 발생할 수 있는 취약점 진단이 가능합니다.
+
+디컴파일된 코드 확인과 메소드 스위즐링, 네이티브/하이브리드/웹앱에 따른 진단 방법을 적용합니다.
+
+안드로이드 앱은 좋은 개발도구들이 지속적으로 출시되고 있어 간단한 앱을 제작하는 것은 매우 쉽습니다.
+
+애플의 아이폰용 앱 개발은 맥북으로 만드는 것을 추천합니다.
+
+안드로이드 앱을 만들어보고, 아이폰용 앱을 만들어 봐야 기본 구조, 주요 컨트롤러나 액티비티 파일을 찾아 진단하는데 용이합니다.
+
+### IoT 기기 보안
+
+IOT 장비들은 펌웨어 리버싱과 웹보안, 하드웨어를 통해 제어가 가능한지 확인하여 다방면에서 취약점을 확인할 수 있습니다.
+
+펌웨어 역분석 및 모의해킹을 통해 취약점 진단이 가능합니다.
+
+IoT 기기에만 해당하는 사항은 아니지만, python을 이용한 아두이노, 라즈베리파이용 프로그램은 필수 코스 입니다.
+
+### 알아야 할 프로그래밍 언어
+
+java, c, php, cmd shell 명렁어, perl, python, javascript, html, xml, sql, unix(linux) shell 명령어, asp, c++, c#, ruby, LISP, 추가 예정
