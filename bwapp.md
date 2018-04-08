@@ -36,7 +36,7 @@ wolverine' or 'a'='a--
 
 XPATH 실습 두번째는 union 과 유사하다.
 
-코드에 따라 다르지만, bWAPP에서 제공하는 코드는 contains를 사용하여 vertical bar;(｜)로 조합한다.
+코드에 따라 다르지만, bWAPP에서 제공하는 코드는 contains를 사용하여 vertical bar;(│)로 조합한다.
 
 실습 코드는 원래 장르에 따른 영화 이름을 출력하지만, 공격 코드는 패스워드를 출력하도록 되어 있다.
 
@@ -61,8 +61,8 @@ $xml->xpath(//hero[contains(genre, '**action**')]/movie);
 
 [공격요청]
 
-xmli_2.php?genre=**action')]/password+｜+//hero\[contains(genre,'+horror**&action=search
+xmli_2.php?genre=**action')]/password+│+//hero\[contains(genre,'+horror**&action=search
 
 [공격 외부 입력]
 
-$xml->xpath(//hero[contains(genre, '**action')]/password ｜ //hero[contains(genre,' horror**')]/movie)
+$xml->xpath(//hero[contains(genre, '**action')]/password │ //hero[contains(genre,' horror**')]/movie)
