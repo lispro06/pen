@@ -19,7 +19,7 @@ hostname 에 운영하고 있는 도메인을 적용하면 좋을 것 같습니�
 
 ### 만난 에러들
 
-fork failed: Cannot allocate memory 를 이유로 sensible-utils 같은 pkg 가 설치되지 않으면, 메모리를 확보하기 위해 사용량이 높은 프로세스를 종료시킨다.
+fork failed: Cannot allocate memory 를 이유로 sensible-utils 같은 pkg 가 설치되지 않으면, 메모리를 확보하기 위해 사용량이 높은 프로세스를 종료시켜야 합니다.
 
 top, kill, dpkg -i *.deb
 
@@ -38,7 +38,7 @@ hostname에 설정된 도메인이 메인으로 되고, 서브 도메인이나 �
 
 이동되는 것으로 보아 업데이트 하면서 개선되어 수정된 것을 생각됩니다.
 
-IIS 도 어렵지 않게 자동 스크립트의 이용기 가능합니다.
+IIS 도 어렵지 않게 자동 스크립트의 이용이 가능합니다.
 
 
 ### http -> https ?
@@ -58,6 +58,6 @@ $ openssl version
 
 OpenSSL 1.0.2g  1 Mar 2016
 
-이 서버의 openssl 버전은 1.0.2g 로 몇 개월은 버틸 수 있을 것 같습니다. 영향이 경미하겠지만, heartbleed나 더 엄청난 취약점들이 기다리고 있으니,
+이 서버의 openssl 버전은 1.0.2g 로 몇 개월은 버틸 수 있을 것 같습니다. 영향이 경미하겠지만,
 
-항상 패치를 준비해야 하겠습니다.
+heartbleed나 더 엄청난 취약점들이 기다리고 있으니, 항상 패치를 준비해야 하겠습니다.
