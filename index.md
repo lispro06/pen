@@ -14,7 +14,7 @@
 
 아파치 기반의 php 언어로 짜여진 웹사이트가 구축되어 있습니다. 잘 알려진 DVWA, bWAPP 가 좋은 실습 환경이죠.
 
-톰캣으로는 jsp로 작성된 코드를 실행할 수 있습니다. mysql을 jdbc로 연결하여 sql injection, xss를 테스트 할 수 있죠.
+톰캣으로는 [jsp](./egov)로 작성된 코드를 실행할 수 있습니다. mysql을 jdbc로 연결하여 sql injection, xss를 테스트 할 수 있죠.
 
 IIS 로는 asp로 만든 웹사이트가 실행되고 있습니다. MS-SQL 과 연동하여 쿠키, 인증 관련 취약점도 확인해 볼 수 있죠.
 
