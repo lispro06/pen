@@ -55,4 +55,4 @@ C:\Windows\System32\inetsrv>appcmd.exe set config "www.도메인.co.kr" -section
 
 #EXEC calls have been disabled for this virtual path
 
-HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\W3SVC\Parameters key에 The CMD option is not enabled for #EXEC calls 값을 1로 설정한다.
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\W3SVC\Parameters key에 SSIEnableCmdDirective 값을 1로 설정한다.
