@@ -11,19 +11,19 @@ iBatis SQL Maps;MyBatis 과 스프링 기반의 java 기반의 정보시스템 �
 <pre><code>
 switch (c) {
 	case '<':
-		strBuff.append("&lt;");
+		strBuff.append("＆lt;");
 		break;
 	case '>':
-		strBuff.append("&gt;");
+		strBuff.append("＆gt;");
 		break;
 	case '&':
-		strBuff.append("&amp;");
+		strBuff.append("＆amp;");
 		break;
 	case '"':
-		strBuff.append("&quot;");
+		strBuff.append("＆quot;");
 		break;
 	case '\'':
-		strBuff.append("&apos;");
+		strBuff.append("＆apos;");
 		break;
 	default:
 		strBuff.append(c);
