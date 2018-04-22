@@ -83,16 +83,24 @@ lab101-project-create-tutor 의 주요 파일로 데이터 리스팅, 입력, �
  
 &나 '가 필터 메소드에 의해 변환되더라도 "&"가 붙으므로 이를 제거해 줄 필요가 있습니다.
 
-<code>
+<pre><code>
 sampleVO.setUseYn(sampleVO.getUseYn().replaceAll("&", "").substring(0, 1));
-</code>
+</code></pre>
 
 Y나 N만 들어가게 하려면 조건문이 하나 더 필요한데, 입력 값이 원하는 것이 아닐 경우 기본 N으로 처리하도록 하는 코드는 아래와 같습니다.
 
-<code>
+<pre><code>
 if(sampleVO.getUseYn() != "Y"){
 	if(sampleVO.getUseYn() != "N"){
 		sampleVO.setUseYn("N");
 	}
 }
-</code>
+</code></pre>
+
+### server.xml
+
+기존에 사용하는 프록시도구나 WAS가 있어 8080 포트를 사용 중이라면, 설정 파일에서 포트를 변경하여 사용 가능합니다.
+
+<pre><code>
+&lt;Connector connectionTimeout="20000" port="8090" protocol="HTTP/1.1" redirectPort="8443"/>
+</code></pre>
