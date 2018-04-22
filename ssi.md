@@ -44,3 +44,11 @@ ln -s /etc/apache2/mods-available/include.load /etc/apache2/mods-enabled
 ＜!--#fsize file="ssi.shtml" -->
 ＜!--#include file=”UUUUUUUU...UU”-->
 </code></pre>
+
+### 사용 가능 구문
+
+IIS에서
+
+C:\Windows\System32\inetsrv>appcmd.exe set config "www.도메인.co.kr" -section:system.webServer/serverSideInclude /ssiExecDisable:"**True/False**" /commit:apphost
+
+명령어를 이용해 명령 실행 활성화/비활성화를 설정할 수 있다.
