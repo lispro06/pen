@@ -74,3 +74,25 @@ web.xml 에 처리되는 확장자와 필터 클래스가 정의되어 있으니
 			LIMIT #{recordCountPerPage} OFFSET #{firstIndex}
 	&lt;/select>
 </code></pre>
+
+### EgovSampleController.java
+
+lab101-project-create-tutor 의 주요 파일로 데이터 리스팅, 입력, 삭제 관련 매소드를 정의하고 있습니다.
+
+입력 파라미터 중 UseYn은 char(1) 로 선언되어 2자리 이상이되면 오류라 발생합니다.
+ 
+&나 '가 필터 메소드에 의해 변환되더라도 "&"가 붙으므로 이를 제거해 줄 필요가 있습니다.
+
+<code>
+sampleVO.setUseYn(sampleVO.getUseYn().replaceAll("&", "").substring(0, 1));
+</code>
+
+Y나 N만 들어가게 하려면 조건문이 하나 더 필요한데, 입력 값이 원하는 것이 아닐 경우 기본 N으로 처리하도록 하는 코드는 아래와 같습니다.
+
+<code>
+if(sampleVO.getUseYn() != "Y"){
+	if(sampleVO.getUseYn() != "N"){
+		sampleVO.setUseYn("N");
+	}
+}
+</code>
