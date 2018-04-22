@@ -45,10 +45,14 @@ ln -s /etc/apache2/mods-available/include.load /etc/apache2/mods-enabled
 ＜!--#include file=”UUUUUUUU...UU”-->
 </code></pre>
 
-### 사용 가능 구문
+### The CMD option is not enabled for #EXEC calls
 
 IIS에서
 
 C:\Windows\System32\inetsrv>appcmd.exe set config "www.도메인.co.kr" -section:system.webServer/serverSideInclude /ssiExecDisable:"**True/False**" /commit:apphost
 
-명령어를 이용해 명령 실행 활성화/비활성화를 설정할 수 있다.
+명령어를 이용해 명령 실행 활성화/비활성화를 설정할 수 있다.(재부팅 불필요)
+
+#EXEC calls have been disabled for this virtual path
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\W3SVC\Parameters key에 The CMD option is not enabled for #EXEC calls 값을 1로 설정한다.
