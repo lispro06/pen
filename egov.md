@@ -33,9 +33,9 @@ switch (c) {
 
 ### HTMLTagFilter.java
 
-doFilter 메소드에 HTMLTagFilterRequestWrapper 클래스를 적용하여, HttpServletRequest에 의한 입력 값 필터링을 수행한다.
+doFilter 메소드에 HTMLTagFilterRequestWrapper 클래스를 적용하여, HttpServletRequest에 의한 입력 값 필터링을 수행합니다.
 
-web.xml 에 처리되는 확장자와 필터 클래스가 정의되어 있으니, 해당 파일을 먼저 확인하여 경로를 찾아보면 도움이 된다.
+web.xml 에 처리되는 확장자와 필터 클래스가 정의되어 있으니, 해당 파일을 먼저 확인하여 경로를 찾아보면 도움이 됩니다.
 
 <pre><code>
 
