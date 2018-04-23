@@ -41,6 +41,7 @@ lucy-xss-1.6.2.jar 파일은 /WEB-INF/lib 경로에 복사합니다.
 ### lucy-xss-superset.xml
 
 <pre><code>
+
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://www.nhncorp.com/lucy-xss"
 	extends="lucy-xss-default.xml">
@@ -69,6 +70,7 @@ lucy-xss-1.6.2.jar 파일은 /WEB-INF/lib 경로에 복사합니다.
 	</attributeRule>
 	
 </config>
+
 </code></pre>
 
 ### 적용하기
