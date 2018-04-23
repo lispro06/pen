@@ -39,7 +39,37 @@ lucy-xss-1.6.2.jar 파일은 /WEB-INF/lib 경로에 복사합니다.
 화이트 리스트 설정 파일은 /src 경로에 복사합니다.
 
 ### lucy-xss-superset.xml
-<pre><code>ss</code></pre>
+<pre><code><?xml version="1.0" encoding="UTF-8"?>
+
+<config xmlns="http://www.nhncorp.com/lucy-xss"
+	extends="lucy-xss-default.xml">
+
+	<elementRule>
+		<element name="body" disable="true" />
+		<element name="embed" disable="true" />
+		<element name="iframe" disable="true" />
+		<element name="meta" disable="true" />
+		<element name="object" disable="true" />
+		<element name="script" disable="true" />
+		<element name="style" disable="true" />
+	</elementRule>
+	
+	<attributeRule>
+		<attribute name="data" base64Decoding="true">
+			<notAllowedPattern><![CDATA[(?i:s\\*c\\*r\\*i\\*p\\*t)]]></notAllowedPattern>
+			<notAllowedPattern><![CDATA[&[#\\%x]+[\da-fA-F][\da-fA-F]+]]></notAllowedPattern>
+		</attribute>
+		<attribute name="src" base64Decoding="true">
+			<notAllowedPattern><![CDATA[(?i:s\\*c\\*r\\*i\\*p\\*t)]]></notAllowedPattern>
+			<notAllowedPattern><![CDATA[&[#\\%x]+[\da-fA-F][\da-fA-F]+]]></notAllowedPattern>
+		</attribute>
+		<attribute name="style">
+			<notAllowedPattern><![CDATA[(?i:e\\*x\\*p\\*r\\*e\\*s\\*s\\*i\\*o\\*n)]]></notAllowedPattern>
+			<notAllowedPattern><![CDATA[&[#\\%x]+[\da-fA-F][\da-fA-F]+]]></notAllowedPattern>
+		</attribute>
+	</attributeRule>
+
+</config></code></pre>
 
 ### 적용하기
 
