@@ -24,7 +24,7 @@ escapeXml 속성을 통하여 변수에 포함된 < > & ' " 문자들을 각각 
 ### <c:out> 태그 적용하기
 
 <pre><code>
-<p> input data : <%=data %></p>
+<p> input data : <%=data %>
 <p> <c:out value="${param.data }"[escapeXml="{true|false}"]></c:out></p>
 </code></pre>
 
