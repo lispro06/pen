@@ -74,7 +74,7 @@ lucy-xss-1.6.2.jar 파일은 /WEB-INF/lib 경로에 복사합니다.
 <pre><code>
 import com.nhncorp.lucy.security.xss.XssFilter;
 		String data=request.getParameter("data");
-				out.println(data);
+		*out.println(data);*
 		XssFilter filter = XssFilter.getInstance("lucy-xss-superset.xml");
 		String FilteredData filter.doFilter(data); 
 		out.println(FilteredData);
