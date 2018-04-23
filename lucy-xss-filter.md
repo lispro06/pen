@@ -1,6 +1,6 @@
 ### lucy-xss-filter
 
-Lucy-XSS는 네이버에서 제공하는 XSS 방어를 위한 오픈 소스 라이브러리이며, 
+Lucy-xss는 네이버에서 제공하는 XSS 방어를 위한 오픈 소스 라이브러리이며, 
 
 블랙리스트 방식이 아닌 화이트리스트 방식의 필터가 적용되어 보다 강력할 보안을 적용할 수 있습니다.
 
@@ -74,12 +74,12 @@ lucy-xss-1.6.2.jar 파일은 /WEB-INF/lib 경로에 복사합니다.
 <pre><code>
 import com.nhncorp.lucy.security.xss.XssFilter;
 
-		String data=request.getParameter("data");
-		out.println(data);
-		XssFilter filter = XssFilter.getInstance("lucy-xss-superset.xml");
-		String FilteredData filter.doFilter(data); 
-		out.println(FilteredData);
-		</code></pre>
+	String data=request.getParameter("data");
+	out.println(data);
+	XssFilter filter = XssFilter.getInstance("lucy-xss-superset.xml");
+	String FilteredData filter.doFilter(data); 
+	out.println(FilteredData);
+	</code></pre>
 
 		
 
