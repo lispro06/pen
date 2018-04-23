@@ -22,7 +22,7 @@ lucy-xss-filter에는 아래와 같이 3가지 화이트 리스트 설정 파일
 
 사용 환경 및 서비스 특성에 맞는 설정 파일을 선택해서 사용할 수 있습니다.
 
-1. lucy-xss-default.xml은 jar파일에 포함되어 배포되는 Lucy-XSS Filter의 
+1. lucy-xss-default.xml은 jar파일에 포함되어 배포되는 lucy-xss Filter의 
    기본 설정 파일로 html element와 attribute가 선언되어있습니다.
 
 2. lucy-xss-superset.xml은 lucy-xss-default.xml을 상속받아 작성된 파일이며 
