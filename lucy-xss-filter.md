@@ -39,7 +39,9 @@ lucy-xss-1.6.2.jar 파일은 /WEB-INF/lib 경로에 복사합니다.
 화이트 리스트 설정 파일은 /src 경로에 복사합니다.
 
 ### lucy-xss-superset.xml
+
 <pre><code>
+
 <?xml version="1.0" encoding="UTF-8"?>
 
 <config xmlns="http://www.nhncorp.com/lucy-xss"
@@ -71,7 +73,6 @@ lucy-xss-1.6.2.jar 파일은 /WEB-INF/lib 경로에 복사합니다.
 
 </config>
 
-
 </code></pre>
 
 ### 적용하기
@@ -79,12 +80,12 @@ lucy-xss-1.6.2.jar 파일은 /WEB-INF/lib 경로에 복사합니다.
 출력 값이 생성되는 파일에 filter를 적용합니다.
 
 <pre><code>
-**import com.nhncorp.lucy.security.xss.XssFilter;**
+*import com.nhncorp.lucy.security.xss.XssFilter;*
 
 		String data=request.getParameter("data");
 		out.println(data);
-		**XssFilter filter = XssFilter.getInstance("lucy-xss-superset.xml");**
-		**String FilteredData filter.doFilter(data); **
+		*XssFilter filter = XssFilter.getInstance("lucy-xss-superset.xml");*
+		*String FilteredData filter.doFilter(data); *
 		out.println(FilteredData);
 		</code></pre>
 		
