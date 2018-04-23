@@ -33,7 +33,9 @@ lucy-xss-filter에는 아래와 같이 3가지 화이트 리스트 설정 파일
 * Filter 인스턴스를 생성할 때 설정 파일명을 지정하지 않으면 디폴트로 lucy-xss.xml파일을 읽어서 사용합니다.
 
 사용 환경 특성에 맞는 화이트 리스트 파일을 선택하여 아래의 경로에 설치합니다. 
+
 lucy-xss-1.6.2.jar 파일은 /WEB-INF/lib 경로에 복사합니다.
+
 화이트 리스트 설정 파일은 /src 경로에 복사합니다.
 
 ### lucy-xss-superset.xml
@@ -42,8 +44,7 @@ lucy-xss-1.6.2.jar 파일은 /WEB-INF/lib 경로에 복사합니다.
 
 <config xmlns="http://www.nhncorp.com/lucy-xss"
 	extends="lucy-xss-default.xml">
-
-	<elementRule>
+		<elementRule>
 		<element name="body" disable="true" />
 		<element name="embed" disable="true" />
 		<element name="iframe" disable="true" />
@@ -51,9 +52,9 @@ lucy-xss-1.6.2.jar 파일은 /WEB-INF/lib 경로에 복사합니다.
 		<element name="object" disable="true" />
 		<element name="script" disable="true" />
 		<element name="style" disable="true" />
-	</elementRule>
-	
-	<attributeRule>
+		</elementRule>
+		
+		<attributeRule>
 		<attribute name="data" base64Decoding="true">
 			<notAllowedPattern><![CDATA[(?i:s\\*c\\*r\\*i\\*p\\*t)]]></notAllowedPattern>
 			<notAllowedPattern><![CDATA[&[#\\%x]+[\da-fA-F][\da-fA-F]+]]></notAllowedPattern>
@@ -69,6 +70,8 @@ lucy-xss-1.6.2.jar 파일은 /WEB-INF/lib 경로에 복사합니다.
 	</attributeRule>
 
 </config>
+
+
 </code></pre>
 
 ### 적용하기
