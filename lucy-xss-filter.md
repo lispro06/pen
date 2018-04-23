@@ -65,7 +65,7 @@ lucy-xss-1.6.2.jar 파일은 /WEB-INF/lib 경로에 복사합니다.
 		</attribute>
 	</attributeRule>
 
-</config> </code></pre>
+</code></pre>
 
 ### 적용하기
 
