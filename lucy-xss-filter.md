@@ -8,7 +8,7 @@ Lucy-XSS는 네이버에서 제공하는 XSS 방어를 위한 오픈 소스 라�
 
 ### 설치 하기
 
-https://github.com/naver/lucy-xss-filter에서 아래의 파일을 설치합니다.
+https://github.com/naver/lucy-xss-filter 에서 아래의 파일을 설치합니다.
 
 - lucy-xss-1.6.2.jar    Lucy-XSS Filter 라이브러리 파일
 
