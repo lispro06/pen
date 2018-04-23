@@ -16,7 +16,7 @@ escapeXml 속성을 통하여 변수에 포함된 < > & ' " 문자들을 각각 
 
 설치 후 lib 디렉토리에서 jstl.jar, standard.jar 파일을 WEB-INF/lib 디렉토리로 복사합니다.
 
-필터를 적용할 jsp파일에서 jstl core 사용을 위한 선언을 합니다.
+ 필터를 적용할 jsp파일에서 jstl core 사용을 위한 선언을 합니다.
 
 <pre><code><%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 </code></pre>
@@ -25,7 +25,6 @@ escapeXml 속성을 통하여 변수에 포함된 < > & ' " 문자들을 각각 
 
 <pre><code>
 <p> input data : <%=data %></p>
-
 <p> <c:out value="${param.data }"[escapeXml="{true|false}"]></c:out></p>
 </code></pre>
 
