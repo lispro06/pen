@@ -10,7 +10,7 @@ jstl의 c:out 태그와 fn:escapeXml()함수를 이용하여 출력 값을 텍�
 
 escapeXml 속성을 통하여 변수에 포함된 < > & ' " 문자들을 각각 &lt; &gt; &amp; &#039; &#034으로 출력합니다.
 
-fn:escapeXml()  jsp prefix  fn functions 라이브러리를 사용하는 태그로 변수를 출력할 때 사용되는 함수이며,
+fn:escapeXml() jsp의 prefix 속성이 fn인 functions 라이브러리를 사용하는 태그로 변수를 출력할 때 사용되는 함수이며,
 
 변수에 포함된 < > & ' " 문자들을 각각 &lt; &gt; &amp; &#039; &#034으로 출력합니다.
 
