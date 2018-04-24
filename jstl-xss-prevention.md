@@ -30,7 +30,8 @@ fn:escapeXml() jsp의 prefix 속성이 fn인 functions 라이브러리를 사용
  String securecoding = "<b>hello, boanit!</b>";
  request.setAttribute("securecoding", securecoding);
 %>
-escapeXml false<
+
+escapeXml false
 < c:out escapeXml="false" value="${securecoding}" />
 escapeXml true
 < c:out escapeXml="true" value="${securecoding}" />
