@@ -25,7 +25,7 @@ fn:escapeXml() jsp의 prefix 속성이 fn인 functions 라이브러리를 사용
 <pre><code><%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 </code></pre>
 
-### <c:out> 태그 적용하기
+### <c: out> 적용하기
 <pre><code><%
  String securecoding = "<b>hello, boanit!</b>";
  request.setAttribute("securecoding", securecoding);
@@ -50,7 +50,7 @@ default
 <pre><code><%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 </code></pre>
 
-### fn:escapeXml() 함수 적용하기
+### fn:escapeXml() 적용하기
 <pre><code><%
  String securecoding = "hello, boanit!";
  request.setAttribute("securecoding", securecoding);
