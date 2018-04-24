@@ -52,7 +52,7 @@ default
 
 ### fn:escapeXml() 함수 적용하기
 <pre><code><%
- String securecoding = "<b>hello, boanit!</b>";
+ String securecoding = "hello, boanit!";
  request.setAttribute("securecoding", securecoding);
 %>
 
