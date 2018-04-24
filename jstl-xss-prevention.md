@@ -53,8 +53,7 @@ default
 </code></pre>
 
 ### fn:escapeXml() 함수 적용하기
-<pre><code>
-<%
+<pre><code><%
  String securecoding = "<b>hello, boanit!</b>";
  request.setAttribute("securecoding", securecoding);
 %>
@@ -62,5 +61,4 @@ default
 With escapeXml() Function:
 <p>string-1 : ${fn:escapeXml(securecoding)}</p>  
 Without escapeXml() Function:
-<p>string-2 : ${securecoding}</p>
-</code></pre>
+<p>string-2 : ${securecoding}</p></code></pre>
