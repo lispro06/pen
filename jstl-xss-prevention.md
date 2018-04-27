@@ -27,7 +27,7 @@ fn:escapeXml() jsp의 prefix 속성이 fn인 functions 라이브러리를 사용
 
 ### <c: out> 적용하기
 <pre><code><%
- String securecoding = "<b>hello, boanit!</b>";
+ String securecoding = "hello, boanit!";
  request.setAttribute("securecoding", securecoding);
 %>
 
