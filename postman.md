@@ -11,7 +11,7 @@ Postman은 크롬 브라우저의 확장 프로그램으로 구글에서 설치�
 초기화면
 
 <div>
-<img src="https://github.com/boanit/pen/blob/master/installation2.PNG" width="90%"></img>
+<img src="https://github.com/boanit/pen/blob/master/installation2.png" width="90%"></img>
 </div>
 
 ### 사용하기
@@ -22,13 +22,13 @@ Postman은 크롬 브라우저의 확장 프로그램으로 구글에서 설치�
 (OAuth, AWS Signature 등 API 서버의 인증이 필요할 경우 Authorization 메뉴를 통해 인증 키 혹은 ID/PWD를 설정할 수 있습니다.)
 
 <div>
-<img src="https://github.com/boanit/pen/blob/master/test01.PNG" width="90%"></img>
+<img src="https://github.com/boanit/pen/blob/master/test01.png" width="90%"></img>
 </div>
 
 헤더 영역을 모두 작성한 후 바디 영역을 작성합니다.
 
 <div>
-<img src="https://github.com/boanit/pen/blob/master/test02.PNG" width="90%"></img>
+<img src="https://github.com/boanit/pen/blob/master/test02.png" width="90%"></img>
 </div>
 
 
