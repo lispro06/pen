@@ -11,42 +11,24 @@ Postman은 크롬 브라우저의 확장 프로그램으로 구글에서 설치�
 초기화면
 
 <div>
-<img src="https://github.com/boanit/pen/blob/master/installation.PNG" width="90%"></img>
+<img src="https://github.com/boanit/pen/blob/master/installation2.PNG" width="90%"></img>
 </div>
 
-### <c: out> 적용하기
-<pre><code><%
- String securecoding = "hello, boanit!";
- request.setAttribute("securecoding", securecoding);
-%>
+### 사용하기
 
-escapeXml false
-< c:out escapeXml="false" value="${securecoding}" />
-escapeXml true
-< c:out escapeXml="true" value="${securecoding}" />
-default
-< c:out value="${securecoding}" />
-</code></pre>
-* escapeXml은 생략될 경우 default로 true가 설정됩니다.
+먼저 요청하고자하는 URL 및 요청 메소드를 선택합니다.
+
+선택 후 헤더 영역을 요청하고자 하는 API 양식에 맞추어 작성합니다.
+(OAuth, AWS Signature 등 API 서버의 인증이 필요할 경우 Authorization 메뉴를 통해 인증 키 혹은 ID/PWD를 설정할 수 있습니다.)
+
+<div>
+<img src="https://github.com/boanit/pen/blob/master/test01.PNG" width="90%"></img>
+</div>
+
+헤더 영역을 모두 작성한 후 바디 영역을 작성합니다.
+
+<div>
+<img src="https://github.com/boanit/pen/blob/master/test02.PNG" width="90%"></img>
+</div>
 
 
-### fn:escapeXml()함수 라이브러리 설치하기
-
-먼저  jstl 사용을 위하여 http://tomcat.apache.org/taglibs/standard/ 에서 jstl 1.1 버전을 설치합니다.
-
-설치 후 lib 디렉토리에서 jstl.jar, standard.jar 파일을 WEB-INF/lib 디렉토리로 복사합니다.
-
-필터를 적용할 jsp파일에서 jstl function 사용을 위한 선언을 합니다.
-<pre><code><%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
-</code></pre>
-
-### fn:escapeXml() 적용하기
-<pre><code><%
- String securecoding = "hello, boanit!";
- request.setAttribute("securecoding", securecoding);
-%>
-
-With escapeXml() Function:
-<p>string-1 : ${fn:escapeXml(securecoding)}</p>  
-Without escapeXml() Function:
-<p>string-2 : ${securecoding}</p></code></pre>
