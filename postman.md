@@ -36,13 +36,13 @@ Postman은 크롬 브라우저의 확장 프로그램으로 구글에서 설치�
 raw로 작성할 경우 Text,Text(test/plain), JSON, Javascript, xml(application/xml), xml(test/xml), HTML(text,html) 으로 형식에 맞게 작성이 가능합니다.
 
 <div>
-<img src="https://github.com/boanit/pen/blob/master/test02.png" width="90%"></img>
+<img src="https://github.com/boanit/pen/blob/master/json.png" width="90%"></img>
 </div>
 
 Send 메뉴를 클릭하며 해당 Request 값에 대한 Response가 아래와 같이 출력됩니다.
 
 <div>
-<img src="https://github.com/boanit/pen/blob/master/test02.png" width="90%"></img>
+<img src="https://github.com/boanit/pen/blob/master/response.png" width="90%"></img>
 </div>
 
 ### Postman Interceptor
@@ -52,7 +52,7 @@ Postman Interceptor를 활성화 경우 좌측 History에 로컬 브라우저에
 postman과 같이 크록 확장프로그램으로 구글 검색 후 설치할 수 있으며 상단의 Postman Interceptor메뉴를 통해 활성화 할 수 있습니다.
 
 <div>
-<img src="https://github.com/boanit/pen/blob/master/test02.png" width="90%"></img>
+<img src="https://github.com/boanit/pen/blob/master/postmaninterceptor.png" width="90%"></img>
 </div>
 
 ### 활용하기 
@@ -62,5 +62,5 @@ postman은 Save메뉴를 통하여 자신의 요청 패킷을 계정에 저장�
 또한 Team Libary 메뉴를 통해 자신의 패킷을 다른 사용자들과 공유할 수 있습니다.
 
 <div>
-<img src="https://github.com/boanit/pen/blob/master/test02.png" width="90%"></img>
+<img src="https://github.com/boanit/pen/blob/master/teamlibrary.png" width="90%"></img>
 </div>
