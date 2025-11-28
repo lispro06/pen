@@ -87,3 +87,7 @@ IoT 기기에만 해당하는 사항은 아니지만, python을 이용한 아두
 ### 알아야 할 프로그래밍 언어
 
 java, c, php, cmd shell 명렁어, perl, python, javascript, html, xml, sql, unix(linux) shell 명령어, asp, c++, c#, ruby, LISP, 추가 예정
+
+
+<a href="budget_calculator.html">예산 계산기</a>
+
